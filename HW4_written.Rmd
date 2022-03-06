@@ -1,0 +1,66 @@
+---
+title: "Homework 4: Written Part"
+subtitle: "STAT 343: Mathematical Statistics"
+output:
+  pdf_document:
+    keep_tex: true
+header-includes:
+   - \usepackage{booktabs}
+geometry: margin=1.5cm
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+\def\simiid{\stackrel{{\mbox{\text{\tiny i.i.d.}}}}{\sim}}
+
+# Details
+
+### How to Write Up
+
+The written part of this assignment can be either typeset using latex or hand written.
+
+### Grading
+
+5% of your grade on this assignment is for turning in something legible and organized.
+
+An additional 15% of your grade is for completion.  A quick pass will be made to ensure that you've made a reasonable attempt at all problems.
+
+In grading these problems, an emphasis will be placed on full explanations of your thought process.  You don't need to write more than a few sentences for any given problem, but you should write complete sentences!  Understanding and explaining the reasons behind what you are doing is at least as important as solving the problems correctly.
+
+
+### Collaboration
+
+You are allowed to work with others on this assignment, but you must complete and submit your own write up.  You should not copy large blocks of code or written text from another student.
+
+### Sources
+
+You may refer to our text, Wikipedia, and other online sources.  All sources you refer to must be cited in the space I have provided at the end of this problem set.
+
+## Problem 1. Adapted from Chihara and Hesterberg, Example 6.15
+
+Let $X \sim Binomial (n,\theta)$, where $n$ is known and $\theta$ is unknown. Let's consider two potential estimators for $\theta$, $\hat{\theta}_1=\frac{X}{n}$ and $\hat{\theta}_2=\frac{X+1}{n+2}$, which adds one artificial success and one artificial failure to the real data. 
+
+### (a) Are these estimators unbiased for $\theta$?
+
+### (b) Find the mean squared error for $\hat{\theta}_1$.
+
+### (c) Find the mean squared error for $\hat{\theta_2}$.
+
+### (d) Plot the mean squared errors you found in (b) and (c) as a function of $\theta$. You may do this either in R or *carefully by hand*. 
+
+
+### (e) Why might someone choose to use $\hat{\theta}_2$ rather than $\hat{\theta_1}$ as an estimator? Refer to your plot in (d) as part of your answer.
+
+\newpage
+
+## Problem 2. Chihara and Hesterberg, Problem 6.30
+
+Let $\hat{\theta}_1$ and $\hat{\theta}_2$ be two different estimators for $\theta$. Suppose $Var(\hat{\theta}_1)=25$ and $Var(\hat{\theta}_2)=4$.
+
+### (a) If $E(\hat{\theta}_1)=\theta$ and $E(\hat{\theta}_2)=\theta+3$, which estimator has the smaller mean squared error?
+
+### (b) Suppose $E(\hat{\theta})=\theta$ and $E(\hat{\theta}_2)=\theta+b$, for some positive number $b$. For what value (if any) does $\hat{\theta}_2$ have a smaller mean square error than $\hat{\theta}_1$?  
+
